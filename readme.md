@@ -1,3 +1,3 @@
 # Online help desk for RAMCAMP2017
 
-clone this repo in {OFRoot}/RamDanceToolkit/apps
+clone this repo into {OFRoot}/RamDanceToolkit/apps

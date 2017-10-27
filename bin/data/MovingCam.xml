@@ -1,0 +1,14 @@
+<cam>
+    <pos>
+        <x>-620</x>
+        <y>300</y>
+        <z>620</z>
+    </pos>
+    <look_at>
+        <x>0</x>
+        <y>50</y>
+        <z>0</z>
+    </look_at>
+    <fov>27</fov>
+    <duration>104</duration>
+</cam>

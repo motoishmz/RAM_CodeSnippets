@@ -1,5 +1,6 @@
 #include "ofApp.h"
 #include "Extractor.h"
+#include "CameraMove.h"
 
 #pragma mark - oF methods
 //--------------------------------------------------------------
@@ -14,6 +15,7 @@ void ofApp::setup() {
   //! scenes setup
   rdtk::SceneManager& sceneManager = rdtk::SceneManager::instance();
   sceneManager.addScene<Extractor>();
+  sceneManager.addScene<CameraMove>();
 }
 
 //--------------------------------------------------------------
@@ -109,11 +111,11 @@ void ofApp::keyPressed(int key) {
   }
   
   else if ('s') {
-    // enable scene 1, 2, 3 if they are exists
+    // enable scene 1, 2 if they are exists
     // note that `Actors` is built-in 0th scene, the first scene you add to rdtk::SceneManager is 1th scene
     // in this example, `EmptyScene` will be enabled when you pressed [s] key
     // if you want to disable specific scenes, replace `enable` to `disable` in the lambda named `applyToSceneManager`
-    std::vector<int> combination = {1, 2, 3};
+    std::vector<int> combination = {1, 2};
     
     auto applyToSceneManager = [](int i){
       const int numScene = rdtk::SceneManager::instance().getNumScenes();
